@@ -336,6 +336,18 @@ class HinduCalendarHolidays(EasternCalendarHolidays):
             name, self._hindu_calendar.maharana_pratap_jayanti_date(self._year)
         )
 
+    def _add_maharishi_valmiki_jayanti(self, name) -> date | None:
+        """
+        Add Maharishi Valmiki Jayanti.
+
+        Maharishi Valmiki Jayanti, also known as Pargat Diwas, celebrates the 
+        birth anniversary of the revered sage Valmiki, the "Adi Kavi" (first poet)
+        and author of the epic Ramayana
+        """
+        return self._add_hindu_calendar_holiday(
+            name, self._hindu_calendar.maharishi_valmiki_jayanti_date(self._year)
+        )
+
     def _add_mahavir_jayanti(self, name) -> date | None:
         """
         Add Mahavir Jayanti.
