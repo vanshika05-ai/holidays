@@ -35,8 +35,8 @@ JANMASHTAMI = "JANMASHTAMI"
 MAHA_ASHTAMI = "MAHA_ASHTAMI"
 MAHA_NAVAMI = "MAHA_NAVAMI"
 MAHARANA_PRATAP_JAYANTI = "MAHARANA_PRATAP_JAYANTI"
-MAHA_SHIVARATRI = "MAHA_SHIVARATRI"
 MAHARISHI_VALMIKI_JAYANTI = "MAHARISHI_VALMIKI_JAYANTI"
+MAHA_SHIVARATRI = "MAHA_SHIVARATRI"
 MAHAVIR_JAYANTI = "MAHAVIR_JAYANTI"
 MAKAR_SANKRANTI = "MAKAR_SANKRANTI"
 ONAM = "ONAM"
@@ -1608,7 +1608,7 @@ class _HinduLunisolar:
 
     def maharana_pratap_jayanti_date(self, year: int) -> tuple[date | None, bool]:
         return self._get_holiday(MAHARANA_PRATAP_JAYANTI, year)
-
+    
     def maharishi_valmiki_jayanti_date(self, year: int) -> tuple[date | None, bool]:
         return self._get_holiday(MAHARISHI_VALMIKI_JAYANTI, year)
 
