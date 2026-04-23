@@ -327,3 +327,7 @@ msgstr "ಪೊಹೆಲಾ ಬೊಯಿಶಾಖ್"
 #. Rabindra Jayanti.
 msgid "Rabindra Jayanti"
 msgstr "ರವೀಂದ್ರ ಜಯಂತಿ"
+
+#. Maharishi Valmiki Jayanti.
+msgid "Maharishi Valmiki Jayanti"
+msgstr "ಮಹರ್ಷಿ ವಾಲ್ಮೀಕಿ ಜಯಂತಿ"

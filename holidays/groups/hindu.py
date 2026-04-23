@@ -191,7 +191,7 @@ class HinduCalendarHolidays(EasternCalendarHolidays):
         Maharashtra. On the same day, the festival is also observed as
         Ugadi in Karnataka, Telangana, and Andhra Pradesh.
 
-        It falls on the first day of Chaitra (March–April) according to
+        It falls on the first day of Chaitra (March-April) according to
         the Hindu lunisolar calendar.
 
         References:
@@ -212,20 +212,6 @@ class HinduCalendarHolidays(EasternCalendarHolidays):
         """
         return self._add_hindu_calendar_holiday_set(
             name, self._hindu_calendar.guru_gobind_singh_jayanti_date(self._year)
-        )
-
-    def _add_maharishi_valmiki_jayanti(self, name) -> date | None:
-        """
-        Add Maharishi Valmiki Jayanti.
-
-        Maharishi Valmiki Jayanti, celebrating the birth of the author
-        of the Ramayana and the Adi Kavi (first poet) of Sanskrit,
-        occurs on the full moon day (Purnima) in the Hindu month of Ashwin.
-        https://en.wikipedia.org/wiki/Valmiki_Jayanti
-        https://www.drikpanchang.com/hindu-saints/valmiki/maharishi-valmiki-jayanti.html
-        """
-        return self._add_hindu_calendar_holiday(
-            name, self._hindu_calendar.maharishi_valmiki_jayanti_date(self._year)
         )
 
     def _add_guru_nanak_jayanti(self, name) -> date | None:
@@ -348,6 +334,18 @@ class HinduCalendarHolidays(EasternCalendarHolidays):
         """
         return self._add_hindu_calendar_holiday(
             name, self._hindu_calendar.maharana_pratap_jayanti_date(self._year)
+        )
+
+    def _add_maharishi_valmiki_jayanti(self, name) -> date | None:
+        """
+        Add Maharishi Valmiki Jayanti.
+
+        Maharishi Valmiki Jayanti, also known as Pargat Diwas, celebrates the 
+        birth anniversary of the revered sage Valmiki, the "Adi Kavi" (first poet)
+        and author of the epic Ramayana
+        """
+        return self._add_hindu_calendar_holiday(
+            name, self._hindu_calendar.maharishi_valmiki_jayanti_date(self._year)
         )
 
     def _add_mahavir_jayanti(self, name) -> date | None:
